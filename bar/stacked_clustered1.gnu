@@ -16,7 +16,7 @@ offset=-0.12
 
 set title "TITLE"
 
-plot 'stacked_clustered.dat' using ($1+offset):($2+$3+$4+$5)/1e-6 lc 0 t 'client' with boxes,\
+plot 'stacked_clustered1.dat' using ($1+offset):($2+$3+$4+$5)/1e-6 lc 0 t 'client' with boxes,\
      ''         using ($1+offset):($3+$4+$5)/1e-6 lc 1 t 'mds' with boxes,\
      ''         using ($1+offset):($4+$5)/1e-6 lc 2 t 'osd' with boxes,\
      ''         using ($1+offset):($5)/1e-6 lc 3 t 'net' with boxes,\
